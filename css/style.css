@@ -19,6 +19,7 @@
 
 #summary {
     color: white;
+    background-color: #262626;
 }
 
 #button-1 {
@@ -35,10 +36,10 @@
     background-image: url("../assets/button.jpg");
     position: relative;
     left: 421px;
-    
-    top: 0px;
+    top: -260px;
     background-repeat: no-repeat;
     width: 58px;
     height: 260px;
     background-size: cover;
+    transform: rotate(180deg);
 }
