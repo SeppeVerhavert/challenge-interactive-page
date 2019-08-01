@@ -1,0 +1,11 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.container{
+    width: 900px;
+    background-color: #000;
+}
+#summary{
+    color: white;
+}
