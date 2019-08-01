@@ -126,15 +126,16 @@ body {
     font-size: 5rem;
 }
 
-.btn-primary {
-    background-color: #f5953a;
-    outline-color: red;
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus{
+    background-color: #c57326;
 }
 
-.btn-primary:active,
-.btn-primary:focus,
+.btn-primary:hover,
 .btn-primary:checked {
-    box-shadow: none;
+    box-shadow: none !important;
+    background-color: #f5953a !important;
 }
 
 .btn-primary:focus {
@@ -143,10 +144,10 @@ body {
 
 .btn-primary:hover {
     background-color: #c57326;
+    box-shadow: none;
 }
 
 .form-signin {
-
     display: flex;
 }
 
