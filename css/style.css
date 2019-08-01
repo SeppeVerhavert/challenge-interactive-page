@@ -24,7 +24,8 @@ body {
 }
 
 #summary,
-#info {
+#info,
+#counter{
     color: white;
     background-color: #262626;
     padding: 57px;
@@ -51,6 +52,9 @@ body {
     background-size: cover;
     transform: rotate(180deg);
 }
+.photo-btns{
+    cursor: pointer;
+}
 
 h1 {
     padding-top: 50px;
@@ -65,3 +69,8 @@ h2 {
 .tab-nav{
     padding-top: 50px;
 }
+#counter p{
+    font-size: 30px;
+}
+
+
