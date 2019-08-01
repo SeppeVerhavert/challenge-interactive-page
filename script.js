@@ -7,7 +7,7 @@ let buttonRight = document.getElementById("button-2");
 let images = ['url("assets/carousel-stage.jpg")', 'url("assets/carousel-band-1.jpg")', 'url("assets/carousel-band-2.jpg")', 'url("assets/carousel-band-3.jpg")'];
 let i = 0;
 
-let carouselInterval = window.onload = setInterval(carouselSlideRight, 3000);
+let carouselInterval = window.onload = setInterval(carouselSlideRight, 4000);
 
 buttonLeft.addEventListener('click', carouselSlideLeft);
 buttonRight.addEventListener('click', carouselSlideRight);
@@ -17,19 +17,25 @@ buttonRight.addEventListener('click', carouselSlideRight);
 let tabSummary = document.getElementById("summary");
 let tabInfo = document.getElementById("info");
 let tabContact = document.getElementById("contact-form");
+let tabLineUp = document.getElementById("line-up");
 
 let summaryBtn = document.getElementById("summary-button");
 let infoBtn = document.getElementById("info-button");
 let contactBtn = document.getElementById("contact-button");
+let lineUpBtn = document.getElementById("lineupt-button");
 
 summaryBtn.addEventListener('click', showSummary);
 infoBtn.addEventListener('click', showInfo);
 contactBtn.addEventListener('click', showContact);
+lineUpBtn.addEventListener('click', showLineUp);
 
 //------------------------------------------------------------------
 
-let badgeN = document.getElementsByClassName("badge");
-let NumberInterval = window.onload = setInterval(showNumbers, 50);
+let badgeN = document.getElementsByClassName("badge")[0];
+let visitorsNumber = window.onload = setInterval(showVisitors, 50);
+
+let badgeM = document.getElementsByClassName("badge")[1];
+let artistsNumber = window.onload = setInterval(showArtists, 50);
 
 //-------------------------------------     CAROUSEL    --------------------------------------------//
 
@@ -55,33 +61,54 @@ function showSummary() {
     tabSummary.style.display = "block";
     tabInfo.style.display = "none";
     tabContact.style.display = "none";
+    tabLineUp.style.display = "none";
 }
 
 function showInfo() {
     tabSummary.style.display = "none";
     tabInfo.style.display = "block";
     tabContact.style.display = "none";
+    tabLineUp.style.display = "none";
 }
 
 function showContact() {
     tabSummary.style.display = "none";
     tabInfo.style.display = "none";
     tabContact.style.display = "block";
+    tabLineUp.style.display = "none";
+}
+
+function showLineUp() {
+    tabSummary.style.display = "none";
+    tabInfo.style.display = "none";
+    tabContact.style.display = "none";
+    tabLineUp.style.display = "block";
+
 }
 
 //-------------------------------------     NUMBERS     ----------------------------------------//
 
 let n = 0;
 
-function showNumbers() {
-    let randomInt = Math.floor(Math.random(1) * Math.floor(10));
+function showVisitors() {
+    let randomIntN = Math.floor(Math.random(1) * Math.floor(20));
     if (n < 9999) {
-
-        n += randomInt;
-        parseInt(n);
-        badgeN[0].innerHTML = n;
+        n += randomIntN;
+        badgeN.innerHTML = n;
     } else {
-        clearInterval(NumberInterval);
+        clearInterval(visitorsNumber);
+    }
+}
+
+let m = 0;
+
+function showArtists() {
+    let randomIntM = Math.floor(Math.random(1) * Math.floor(5));
+    if (m < 200) {
+        m += randomIntM;
+        badgeM.innerHTML = m;
+    } else {
+        clearInterval(artistsNumber);
     }
 }
 
