@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Jolly+Lodger&display=swap');
+
 * {
     margin: 0 auto;
     box-sizing: border-box;
+    font-family: 'Jolly Lodger', cursive;
 }
 
 body {
