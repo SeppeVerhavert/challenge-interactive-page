@@ -22,13 +22,12 @@ body {
 }
 
 .photo {
+    height: 260px;
     background-image: url("../assets/carousel-stage.jpg");
     background-color: #cccccc;
-
-    height: 260px;
     background-repeat: no-repeat;
     background-size: cover;
-
+    transition: opacity 1000ms
 }
 
 #summary,
@@ -48,10 +47,6 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-
-.btn.active, .btn:active {
-    background-color: #e0822a;
 }
 
 #counter {
@@ -121,7 +116,7 @@ body {
 }
 
 #line-up,
-#contact-form{
+#contact-form {
     padding: 57px;
 }
 
@@ -131,29 +126,35 @@ body {
     font-size: 5rem;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #f5953a;
     outline-color: red;
 }
 
 .btn-primary:active,
 .btn-primary:focus,
-.btn-primary:checked
-{
-  box-shadow: none;
+.btn-primary:checked {
+    box-shadow: none;
 }
 
-.btn-primary:hover{
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary:hover {
     background-color: #c57326;
 }
 
-.form-signin{
+.form-signin {
+
     display: flex;
 }
-.form-signin input{
-   margin-bottom: 44px;
+
+.form-signin input {
+    margin-bottom: 44px;
 }
-#submit{
+
+#submit {
     position: relative;
     left: -59px;
     top: 40px;
