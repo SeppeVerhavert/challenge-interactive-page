@@ -1,11 +1,44 @@
-*{
+* {
     margin: 0 auto;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 900px;
     background-color: #000;
 }
-#summary{
+
+.photo {
+    background-image: url("../assets/carousel-stage.jpg");
+    background-color: #cccccc;
+
+    height: 260px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#summary {
     color: white;
+}
+
+#button-1 {
+    background-image: url("../assets/button.jpg");
+    position: relative;
+    left: -420px;
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 260px;
+    background-size: cover;
+}
+
+#button-2 {
+    background-image: url("../assets/button.jpg");
+    position: relative;
+    left: 421px;
+    
+    top: 0px;
+    background-repeat: no-repeat;
+    width: 58px;
+    height: 260px;
+    background-size: cover;
 }
