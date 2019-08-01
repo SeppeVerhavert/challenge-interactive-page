@@ -4,10 +4,6 @@ let carousel = document.getElementsByClassName("photo")[0];
 let buttonLeft = document.getElementById("button-1");
 let buttonRight = document.getElementById("button-2");
 
-let tabSummary = document.getElementById("summary");
-let tabInfo = document.getElementById("info");
-let tabContact = document.getElementById("contact-form");
-
 let images = ['url("assets/carousel-stage.jpg")', 'url("assets/carousel-band-1.jpg")', 'url("assets/carousel-band-2.jpg")', 'url("assets/carousel-band-3.jpg")'];
 let i = 0;
 
@@ -15,6 +11,18 @@ let carouselInterval = window.onload = setInterval(carouselSlideRight, 3000);
 
 buttonLeft.addEventListener('click', carouselSlideLeft);
 buttonRight.addEventListener('click', carouselSlideRight);
+
+let tabSummary = document.getElementById("summary");
+let tabInfo = document.getElementById("info");
+let tabContact = document.getElementById("contact-form");
+
+let summaryBtn = document.getElementById("");
+let infoBtn = document.getElementById("");
+let contactBtn = document.getElementById("");
+
+summaryBtn.addEventListener('click', showSummary);
+infoBtn.addEventListener('click', showInfo);
+contactBtn.addEventListener('click', showContact);
 
 //-------------------------------------     CAROUSEL    --------------------------------------------//
 
@@ -38,8 +46,14 @@ function carouselSlideRight() {
 
 //-------------------------------------     TABS    --------------------------------------------//
 
+function showSummary() {
 
+}
 
+function showInfo() {
 
+}
 
-
+function showContact() {
+    
+}
