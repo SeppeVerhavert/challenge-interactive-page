@@ -115,7 +115,8 @@ body {
     padding-left: 58px;
 }
 
-#line-up {
+#line-up,
+#contact-form {
     padding: 57px;
 }
 
@@ -125,20 +126,31 @@ body {
     font-size: 5rem;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #f5953a;
-    border: none;
-    drop-shadow: none;
+    outline-color: red;
 }
 
-.btn-primary:hover{
-    background-color: #c57326;
-    border: none;
+.btn-primary:active,
+.btn-primary:focus {
     box-shadow: none;
 }
 
-.btn-primary:focus{
+.btn-primary:hover {
     background-color: #c57326;
-    border: none;
-    box-shadow: none;
+}
+
+
+.form-signin {
+    display: flex;
+}
+
+.form-signin input {
+    margin-bottom: 44px;
+}
+
+#submit {
+    position: relative;
+    left: -59px;
+    top: 40px;
 }
