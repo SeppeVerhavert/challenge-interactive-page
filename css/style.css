@@ -132,6 +132,11 @@ body {
 }
 
 .btn-primary:active,
+.btn-primary:focus,
+.btn-primary:checked {
+    box-shadow: none;
+}
+
 .btn-primary:focus {
     box-shadow: none;
 }
@@ -140,8 +145,8 @@ body {
     background-color: #c57326;
 }
 
-
 .form-signin {
+
     display: flex;
 }
 
