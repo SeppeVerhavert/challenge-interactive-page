@@ -2,14 +2,15 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
-body{
-    background: rgb(0,0,0);
-background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
+
+body {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
 }
 
 .container {
     width: 900px;
-    background-color: #000;
+    background-color: #262626;
 }
 
 .photo {
@@ -22,7 +23,7 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
 }
 
 #summary,
-#info{
+#info {
     color: white;
     background-color: #262626;
     padding: 57px;
@@ -49,12 +50,13 @@ background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
     background-size: cover;
     transform: rotate(180deg);
 }
-h1{
+
+h1 {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-h2{
+h2 {
     padding-top: 50px;
     padding-bottom: 30px;
 }
