@@ -10,7 +10,7 @@ body {
 
     background-image: url("../assets/background.jpg"),
         -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
-    
+
 }
 
 .container {
@@ -25,16 +25,17 @@ body {
     height: 260px;
     background-repeat: no-repeat;
     background-size: cover;
-    
+
 }
 
 #summary,
 #info,
-#counter{
+#counter {
     color: white;
     background-color: #262626;
     padding: 57px;
 }
+
 
 #button-1 {
     background-image: url("../assets/button.jpg");
@@ -57,28 +58,39 @@ body {
     background-size: cover;
     transform: rotate(180deg);
 }
-.photo-btns{
+
+.photo-btns {
     cursor: pointer;
 }
 
-#contact-form{
-   margin-top: 56px;
+#contact-form {
+    margin-top: 56px;
 }
-.tab-nav{
+
+.tab-nav {
     padding-top: 50px;
 }
-#counter{
+
+#counter {
     display: flex;
 }
-#counter p{
+
+#counter p {
     font-size: 60px;
     text-align: center;
 }
-.how-many{
+
+.how-many {
     width: 50%;
     background-color: #525151;
     margin: 6px;
 }
-.btn-menu{
+
+.btn-menu {
     padding-left: 58px;
+}
+
+#line-up {
+    padding: 57px;
+
 }
