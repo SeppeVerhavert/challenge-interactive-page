@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 * {
     margin: 0 auto;
     box-sizing: border-box;
-    font-family: 'Jolly Lodger', cursive;
 }
 
 body {
@@ -13,8 +13,7 @@ body {
 
     background-image: url("../assets/background.jpg"),
         -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
-        background-size: cover;
-
+    background-size: cover;
 }
 
 .container {
@@ -33,11 +32,17 @@ body {
 }
 
 #summary,
-#info,
+#info {
+    color: white;
+    background-color: #262626;
+    padding: 57px;
+}
+
 #counter {
     color: white;
     background-color: #262626;
     padding: 57px;
+    font-family: 'Jolly Lodger', cursive;
 }
 
 
@@ -71,6 +76,10 @@ body {
     margin-top: 56px;
 }
 
+.tabs {
+    font-family: 'Nunito', sans-serif;
+}
+
 .tab-nav {
     padding-top: 50px;
     width: 95%;
@@ -97,5 +106,4 @@ body {
 
 #line-up {
     padding: 57px;
-
 }
