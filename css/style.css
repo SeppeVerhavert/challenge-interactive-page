@@ -123,3 +123,12 @@ body {
 #line-up {
     padding: 57px;
 }
+
+
+
+.btn-primary{
+    background-color: #f5953a;
+}
+.btn-primary:hover{
+    background-color: #c57326;
+}
