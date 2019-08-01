@@ -75,9 +75,9 @@ let n = 0;
 
 function showNumbers() {
     let randomInt = Math.floor(Math.random(1) * Math.floor(10));
-    console.log(randomInt);
     if (n < 9999) {
-        n += randomInt + n*2;
+
+        n += randomInt;
         parseInt(n);
         badgeN[0].innerHTML = n;
     } else {
