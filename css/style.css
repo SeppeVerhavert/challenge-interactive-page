@@ -120,7 +120,8 @@ body {
     padding-left: 58px;
 }
 
-#line-up {
+#line-up,
+#contact-form{
     padding: 57px;
 }
 
@@ -128,7 +129,24 @@ body {
 
 .btn-primary{
     background-color: #f5953a;
+    outline-color: red;
 }
+
+
+.btn-primary:active,
+.btn-primary:focus,
+{
+  box-shadow: none;
+}
+
 .btn-primary:hover{
     background-color: #c57326;
+}
+
+
+.form-signin{
+    display: flex;
+}
+.form-signin input{
+   margin-bottom: 44px;
 }
