@@ -1,16 +1,27 @@
-let carousel = document.getElementsByClassName("photo");
+let carousel = document.getElementsByClassName("photo")[0];
 let buttonLeft = document.getElementById("button-1");
 let buttonRight = document.getElementById("button-2");
+
+let images = ['url("assets/carousel-stage.jpg")', 'url("assets/carousel-band-1.jpg")', 'url("assets/carousel-band-2.jpg")', 'url("assets/carousel-band-3.jpg")'];
+let i = 0;
 
 buttonLeft.addEventListener('click', carouselSlideLeft);
 buttonRight.addEventListener('click', carouselSlideRight);
 
 function carouselSlideLeft() {
-    console.log("left");
+    if (i < 1) {
+        i = 4;
+    }
+    i -= 1;
+    carousel.style.backgroundImage = images[i];
 }
 
 function carouselSlideRight() {
-    console.log("Right");
+    if (i > 2) {
+        i = -1;
+    }
+    i += 1;
+    carousel.style.backgroundImage = images[i];
 }
 
 
