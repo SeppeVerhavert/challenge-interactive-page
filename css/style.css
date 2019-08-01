@@ -2,6 +2,10 @@
     margin: 0 auto;
     box-sizing: border-box;
 }
+body{
+    background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(38,38,38,1) 100%);
+}
 
 .container {
     width: 900px;
@@ -17,15 +21,17 @@
     background-size: cover;
 }
 
-#summary {
+#summary,
+#info{
     color: white;
     background-color: #262626;
+    padding: 57px;
 }
 
 #button-1 {
     background-image: url("../assets/button.jpg");
     position: relative;
-    left: -420px;
+    left: -421px;
     background-repeat: no-repeat;
     width: 58px;
     height: 260px;
@@ -42,4 +48,13 @@
     height: 260px;
     background-size: cover;
     transform: rotate(180deg);
+}
+h1{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+h2{
+    padding-top: 50px;
+    padding-bottom: 30px;
 }
