@@ -21,22 +21,22 @@
 
         </div>
         <div class="tabs">
-           
-           <div class="tab-nav btn-group" role="group">
-              
-               <button type="button" class="btn btn-primary" id="summary">
-               summary   
-               </button>
-               <button type="button" class="btn btn-primary" id="info">
-               info   
-               </button>
-               <button type="button" class="btn btn-primary" id="contact">
-               contact   
-               </button>
-           </div>
+
+            <div class="tab-nav btn-group" role="group">
+
+                <button type="button" class="btn btn-primary" id="summary-button">
+                    summary
+                </button>
+                <button type="button" class="btn btn-primary" id="info-button">
+                    info
+                </button>
+                <button type="button" class="btn btn-primary" id="contact-button">
+                    contact
+                </button>
+            </div>
             <div id="summary">
                 <h1>summary</h1>
-                
+
                 <p>
                     Alcatraz has been a metal festival for the young since 2009. It has relaxed metal atmosphere and
                     attracts fans of all ages. Thanks to the good reputation it has earned through its versatile line-up
@@ -44,9 +44,14 @@
                     performances by Belgian bands.
                 </p>
             </div>
-            
+
             <div id="info">
-                <h1>practical info</h1>
+
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">Practical info</li>
+                    </ol>
+                </nav>
                 <h2>How to get there?</h2>
                 <p>
                     Stop busstation Festival: Kortrijk Lange Munte
@@ -99,7 +104,7 @@
             </div>
         </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 
