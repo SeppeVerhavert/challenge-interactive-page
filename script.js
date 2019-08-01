@@ -14,6 +14,7 @@ function carouselSlideLeft() {
     }
     i -= 1;
     carousel.style.backgroundImage = images[i];
+    carouselInterval;
 }
 
 function carouselSlideRight() {
@@ -22,6 +23,11 @@ function carouselSlideRight() {
     }
     i += 1;
     carousel.style.backgroundImage = images[i];
+    carouselInterval;
+}
+
+function CarouselInterval() {
+    let interval = setInterval(carouselSlideRight, 3000);
 }
 
 
