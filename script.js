@@ -5,6 +5,8 @@ let buttonRight = document.getElementById("button-2");
 let images = ['url("assets/carousel-stage.jpg")', 'url("assets/carousel-band-1.jpg")', 'url("assets/carousel-band-2.jpg")', 'url("assets/carousel-band-3.jpg")'];
 let i = 0;
 
+let carouselInterval = window.onload = setInterval(carouselSlideRight, 3000);
+
 buttonLeft.addEventListener('click', carouselSlideLeft);
 buttonRight.addEventListener('click', carouselSlideRight);
 
@@ -26,9 +28,6 @@ function carouselSlideRight() {
     carouselInterval;
 }
 
-function CarouselInterval() {
-    let interval = setInterval(carouselSlideRight, 3000);
-}
 
 
 
