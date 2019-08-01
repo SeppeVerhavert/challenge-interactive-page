@@ -22,13 +22,12 @@ body {
 }
 
 .photo {
+    height: 260px;
     background-image: url("../assets/carousel-stage.jpg");
     background-color: #cccccc;
-
-    height: 260px;
     background-repeat: no-repeat;
     background-size: cover;
-
+    transition: opacity 1000ms
 }
 
 #summary,
@@ -48,10 +47,6 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-}
-
-.btn.active, .btn:active {
-    background-color: #e0822a;
 }
 
 #counter {
@@ -132,7 +127,18 @@ body {
 
 .btn-primary{
     background-color: #f5953a;
+    border: none;
+    drop-shadow: none;
 }
+
 .btn-primary:hover{
     background-color: #c57326;
+    border: none;
+    box-shadow: none;
+}
+
+.btn-primary:focus{
+    background-color: #c57326;
+    border: none;
+    box-shadow: none;
 }

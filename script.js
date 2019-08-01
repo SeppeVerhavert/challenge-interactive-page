@@ -91,8 +91,12 @@ function showLineUp() {
 let n = 0;
 
 function showVisitors() {
-    let randomIntN = Math.floor(Math.random(1) * Math.floor(20));
-    if (n < 9999) {
+    if (n < 8999) {
+        let randomIntN = Math.floor(Math.random(1) * Math.floor(20));
+        n += randomIntN + 137;
+        badgeN.innerHTML = n;
+    } else if (n > 8999 && n < 9999) {
+        let randomIntN = Math.floor(Math.random(1) * Math.floor(3));
         n += randomIntN;
         badgeN.innerHTML = n;
     } else {
