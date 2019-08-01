@@ -4,8 +4,13 @@
 }
 
 body {
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
+
+    /* fallback */
+    background-image: url("../assets/background.jpg");
+
+    background-image: url("../assets/background.jpg"),
+        -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
+    
 }
 
 .container {
@@ -56,21 +61,24 @@ body {
     cursor: pointer;
 }
 
-h1 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-h2 {
-    padding-top: 50px;
-    padding-bottom: 30px;
-
+#contact-form{
+   margin-top: 56px;
 }
 .tab-nav{
     padding-top: 50px;
 }
-#counter p{
-    font-size: 30px;
+#counter{
+    display: flex;
 }
-
-
+#counter p{
+    font-size: 60px;
+    text-align: center;
+}
+.how-many{
+    width: 50%;
+    background-color: #525151;
+    margin: 6px;
+}
+.btn-menu{
+    padding-left: 58px;
+}
