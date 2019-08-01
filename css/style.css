@@ -50,8 +50,8 @@ body {
     font-size: 16px;
 }
 
-.btn.active {
-    background-color: rgb(197, 115, 38);
+.btn.active, .btn:active {
+    background-color: #e0822a;
 }
 
 #counter {
