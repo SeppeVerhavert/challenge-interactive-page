@@ -10,15 +10,10 @@
 
 <body>
     <div class="container">
-
-        <div class="photo">
-
-            <div id="button-1" class="photo-btns">
-
-            </div>
-            <div id="button-2" class="photo-btns">
-            </div>
-
+        <div class="row banner">
+            <div id="button-1" class="col photo-btns"></div>
+            <div class="col-10 photo"></div>
+            <div id="button-2" class="col photo-btns"></div>
         </div>
         <div class="tabs">
 
@@ -90,7 +85,6 @@
                     <li>Monday: 8.00 – 12.30</li>
                 </ul>
 
-
             </div>
             <div id="contact-form">
                 <nav aria-label="breadcrumb">
@@ -99,22 +93,23 @@
                     </ol>
                 </nav>
                 <form class="form-signin" action="mailto:seppe.verhavert@gmail.com" method="post">
-                   <div class="form-section">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Name" class="form-control">
+                    <div class="form-section">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Name" class="form-control">
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Last name" class="form-control"><br>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Last name" class="form-control">
 
-                    <input type="email" id="email" name="email" placeholder="Email" class="form-control">
+
+                        <label for="lname">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" class="form-control">
                     </div>
                     <div class="form-section">
-
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something to us" class="form-control" rows="10" cols="20">
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something to us" class="form-control" rows="10" cols="20">
                     </textarea><br>
 
-                    <input type="submit" value="Send" id="submit">
+                        <input type="submit" value="Send" id="submit">
                     </div>
                 </form>
             </div>
@@ -125,7 +120,6 @@
                         <li class="breadcrumb-item active" aria-current="page">Line up</li>
                     </ol>
                 </nav>
-
 
                 <!-- line up -->
 
@@ -159,7 +153,8 @@
                     </div>
 
                 </div>
-            </div><!-- cards-->
+            </div>
+            <!-- cards-->
 
             <!-- counter -->
             <div id="counter">
@@ -169,7 +164,7 @@
                     visitors!
                 </p>
 
-                <p class="how-many ">
+                <p class="how-many">
                     More than<br>
                     <span class="badge badge-secondary">N</span><br>
                     artists!

@@ -7,27 +7,28 @@
 }
 
 body {
-
     /* fallback */
     background-image: url("../assets/background.jpg");
-
     background-image: url("../assets/background.jpg"),
         -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
     background-size: cover;
+
 }
 
 .container {
-    width: 900px;
+    max-width: 940px;
+    min-width: 400px;
     background-color: #262626;
+    /*min-width: 576px;*/
+
 }
 
 .photo {
-    height: 260px;
     background-image: url("../assets/carousel-stage.jpg");
     background-color: #cccccc;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: opacity 1000ms
 }
 
 #summary,
@@ -39,7 +40,6 @@ body {
 
 .btn {
     background-color: rgb(197, 115, 38);
-    /* Green */
     border: none;
     color: white;
     padding: 15px 32px;
@@ -56,35 +56,30 @@ body {
     font-family: 'Jolly Lodger', cursive;
 }
 
+.banner {
+    height: 260px;
+}
 
 #button-1 {
     background-image: url("../assets/button.jpg");
-    position: relative;
-    left: -421px;
     background-repeat: no-repeat;
-    width: 58px;
-    height: 260px;
     background-size: cover;
+    height: 260px;
 }
 
 #button-2 {
     background-image: url("../assets/button.jpg");
-    position: relative;
-    left: 421px;
-    top: -260px;
     background-repeat: no-repeat;
-    width: 58px;
-    height: 260px;
     background-size: cover;
-    transform: rotate(180deg);
+    height: 260px;
+    transform: rotateY(180deg);
 }
 
 .photo-btns {
     cursor: pointer;
-}
+    position: relative;
+    top: -40px;
 
-#contact-form {
-    margin-top: 56px;
 }
 
 .tabs {
@@ -109,6 +104,7 @@ body {
     width: 50%;
     background-color: #525151;
     margin: 6px;
+    min-width: 236px;
 }
 
 .btn-menu {
@@ -124,11 +120,12 @@ body {
     color: #e0822a;
     text-shadow: 1px 1px 2px #ce6c11, 0 0 1em #5e350f, 0 0 0.2em #5e350f;
     font-size: 5rem;
+    min-width: 100px;
 }
 
 .btn-primary:active,
 .btn-primary.active,
-.btn-primary:focus{
+.btn-primary:focus {
     background-color: #c57326;
 }
 
@@ -147,6 +144,10 @@ body {
     box-shadow: none;
 }
 
+label {
+    color: white;
+}
+
 .form-signin {
     display: flex;
 }
@@ -157,6 +158,33 @@ body {
 
 #submit {
     position: relative;
-    left: -100px;
+    left: -74px;
     top: 40px;
+}
+
+textarea.form-control {
+    height: auto;
+    width: 410px;
+}
+
+@media screen and (max-width: 990px) {
+
+    .form-signin {
+        display: block;
+    }
+
+    textarea.form-control {
+        height: auto;
+        width: 100%;
+    }
+
+    .btn {
+        padding: 0px 0px;
+    }
+
+    #submit {
+
+        left: 0px;
+
+    }
 }
